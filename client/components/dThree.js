@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 
-export const dThreeFunction2 = (data, countries) => {
+export const dThreeFunction3 = (data, countries) => {
   // const data = generateData()
   data = data.filter(
     (obj, index) =>
