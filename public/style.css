@@ -142,8 +142,13 @@ Navi.js Css Here - LEFTSIDE
 
 #home-icon {
   height: 65px;
-  width: 85px;
+  width: 105px;
   margin: 10px;
+}
+#D3 {
+border-radius: 50%;
+padding: 2px;
+
 }
 
 #navi .leftside .button {
@@ -598,7 +603,20 @@ SET THE SIZE  AGAIN WHEN THE PIXEL CHANGING
 .topics {
   height: 5em;
 }
-
+#aboutUs {
+  background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 450px;
+    float: left;
+    left: 50%;
+    color: white;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -260px;
+}
 /* .plotLinear {
   background-color: #ffffff;
   filter: invert(89%);
