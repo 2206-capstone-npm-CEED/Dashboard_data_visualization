@@ -133,6 +133,7 @@ export class LinearRegression extends React.Component {
         <div className="confine">
           <div className="plotLinearRegression">
             <PlotFigure options={plotFuncLinearRegression(data)} />
+            <div id="linearRegressionForm">
             <form onSubmit={this.changeMinYear}>
               <label htmlFor="minYear"> MinYear </label>
               <input
@@ -161,7 +162,9 @@ export class LinearRegression extends React.Component {
               />
               <button type="submit"> Update </button>
             </form>
-            <label htmlFor="searchBox">
+            </div>
+            <div>
+            <label htmlFor="searchBox" id="linearRegressionSearch">
               <input
                 type="text"
                 className="search"
@@ -184,6 +187,8 @@ export class LinearRegression extends React.Component {
                 ))}
               </label>
             </fieldset>
+            </div>
+
           </div>
         </div>
       );

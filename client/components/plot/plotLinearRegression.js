@@ -26,8 +26,10 @@ export const plotFuncLinearRegression = (state) => {
   // });
 
   return {
-    height: 500,
+    height: 600,
     width: 1000,
+
+
     y: {
       grid: true,
       type: "log",
@@ -38,6 +40,12 @@ export const plotFuncLinearRegression = (state) => {
     },
     grid: true,
     color: { legend: true },
+    style: {
+      fontSize: "12px",
+
+    },
+
+
     marks: [
       // Plot.dot(filteredData, {
       //   x: "time",
@@ -54,6 +62,8 @@ export const plotFuncLinearRegression = (state) => {
         y: "lifeExpectancy",
         fill: "name",
       }),
+
+
       // Plot.linearRegressionY(filteredData, {
       //   x: "year",
       //   y: "lifeExpectancy",
@@ -82,5 +92,9 @@ export const plotFuncLinearRegression = (state) => {
         y: "lifeExpectancy",
       }),
     ],
+
+
+
   };
 };
+

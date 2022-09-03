@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 1em;
+  padding: 50;
+
 }
 
 button:hover {
@@ -32,26 +33,38 @@ form div {
   filter: invert(89%);
 } */
 .search {
-  width: 240px;
+  width: 360px;
+  height: 40px;
+  border-radius: 5;
+
+  font-size: 22px;
 }
 #container {
   padding: 10% 20%;
 }
 .checkBoxes {
-  float: right;
-  width: 260px;
-  height: 850px;
+
+  width: 360px;
+  height: 720px;
   overflow-y: scroll;
   scrollbar-color: rebeccapurp green;
   scrollbar-width: thin;
-  font-size: 20px;
+  font-size: 22px;
   background-image: url("https://fvmstatic.s3.amazonaws.com/maps/m/WRLD-EPS-01-0007.png");
   background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+
 }
 .checkbox {
   position: relative;
   display: inline-block;
   background: #fee102;
+
 }
 
 div.tooltip {
@@ -68,8 +81,17 @@ div.tooltip {
 
 .confine {
   display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
   filter: invert(89%);
+  font-size: 25px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  padding-left: 20px;
+
+
 }
 
 /***********************
@@ -643,14 +665,34 @@ body {
 }
 #contact {
   /* overflow: auto; */
-  text-align: center;
+  /* text-align: center;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+  background-color: rgba(72, 72, 72, 0.4);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+
 }
 #contact #form {
   width: 410px;
-  float: center;
+  /* float: center;
   position: relative;
   left: 650px;
-  top: 260px;
+  top: 260px; */
+
+
 }
 #contact #form h2 {
   font: 48px "Bree Serif", Georgia, serif;
@@ -724,4 +766,35 @@ body {
   border: medium none;
   cursor: pointer;
   width: 15px;
+
+}
+
+
+
+
+
+.plotLinearRegression {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  justify-content: space-around;
+}
+
+#linearRegressionForm {
+  padding: 10px;
+}
+
+
+#densityCheckbox .checkBoxes {
+  width: 160px;
+  height: 180px;
+  padding-right:10px ;
+}
+
+#densityForm {
+  padding: 10px;
+}
+
+#densityComp {
+  padding-left: 50px;
 }

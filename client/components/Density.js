@@ -139,43 +139,45 @@ export class PlotDensity extends React.Component {
       let regionArr = ["asia", "americas", "africa", "europe"];
       let data = this.helper();
       return (
-        <div className="confine">
+        <div id="densityComp" className="confine">
           <PlotFigure options={plotFuncDensity(data)} />
-          <form onSubmit={this.changeMinYear}>
-            <label htmlFor="minYear"> MinYear </label>
-            <input
-              name="minYear"
-              placeholder="minYear"
-              onChange={this.updateMinYear}
-            />
-            <button type="submit"> Update </button>
-          </form>
+          <div id="densityForm">
+            <form onSubmit={this.changeMinYear}>
+              <label htmlFor="minYear"> MinYear </label>
+              <input
+                name="minYear"
+                placeholder="minYear"
+                onChange={this.updateMinYear}
+              />
+              <button type="submit"> Update </button>
+            </form>
 
-          <form onSubmit={this.changeMaxYear}>
-            <label htmlFor="maxYear"> MaxYear </label>
-            <input
-              name="value"
-              placeholder="maxYear"
-              onChange={this.updateMaxYear}
-            />
-            <button type="submit"> Update </button>
-          </form>
-          <fieldset className="checkBoxes">
-            <label htmlFor="checkBox">
-              {regionArr.map((region, index) => (
-                <div key={index}>
-                  <input
-                    type="checkbox"
-
-                    name={region}
-                    onClick={this.selectRegion}
-
-                  />
-                  {region}
-                </div>
-              ))}
-            </label>
-          </fieldset>
+            <form onSubmit={this.changeMaxYear}>
+              <label htmlFor="maxYear"> MaxYear </label>
+              <input
+                name="value"
+                placeholder="maxYear"
+                onChange={this.updateMaxYear}
+              />
+              <button type="submit"> Update </button>
+            </form>
+          </div>
+          <div id="densityCheckbox">
+            <fieldset className="checkBoxes">
+              <label htmlFor="checkBox">
+                {regionArr.map((region, index) => (
+                  <div key={index}>
+                    <input
+                      type="checkbox"
+                      name={region}
+                      onClick={this.selectRegion}
+                    />
+                    {region}
+                  </div>
+                ))}
+              </label>
+            </fieldset>
+          </div>
         </div>
       );
     }
