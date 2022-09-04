@@ -58,7 +58,9 @@ class Navi extends React.Component {
           </div>
 
           <div className="rightside">
-            <div className="media-link">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div  id="mediaLink" className="media-link">
               <a href="https://twitter.com/CeedNpm">
                 <TwitterIcon />
               </a>

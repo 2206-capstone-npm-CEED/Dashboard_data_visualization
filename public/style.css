@@ -210,9 +210,12 @@ Navi.js Css Here -RIGHT
 #navi .rightside {
   flex: 30%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding-right: 25px;
+
+
+
 }
 
 #navi .rightside input {
@@ -236,6 +239,15 @@ Navi.js Css Here -RIGHT
   color: aliceblue;
   padding-right: 25px;
 }
+
+
+#navi .rightside .media-link {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+
+
 
 /******************************************
 SET THE SIZE  AGAIN WHEN THE PIXEL CHANGING
@@ -372,10 +384,11 @@ SET THE SIZE  AGAIN WHEN THE PIXEL CHANGING
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #021e39;
+  background-color: #191a1b;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(233, 233, 233, 0.2);
   z-index: 1;
+
 }
 
 /* Links inside the dropdown */
@@ -578,6 +591,7 @@ SET THE SIZE  AGAIN WHEN THE PIXEL CHANGING
   margin-left: -260px;
   border-radius: 7px;
   -webkit-border-radius: 7px;
+  box-shadow: 0px 18px 36px 0px rgba(233, 233, 233, 0.2);
 }
 .feedback-input {
   color: #3c3c3c;
@@ -624,6 +638,7 @@ SET THE SIZE  AGAIN WHEN THE PIXEL CHANGING
 
 .topics {
   height: 5em;
+
 }
 #aboutUs {
   background-color: rgba(72, 72, 72, 0.4);
@@ -638,6 +653,8 @@ SET THE SIZE  AGAIN WHEN THE PIXEL CHANGING
     position: absolute;
     margin-top: 30px;
     margin-left: -260px;
+    border-radius: 20px;
+    box-shadow: 0px 18px 36px 0px rgba(233, 233, 233, 0.2);
 }
 /* .plotLinear {
   background-color: #ffffff;
@@ -683,6 +700,7 @@ body {
   margin-left: -260px;
   border-radius: 7px;
   -webkit-border-radius: 7px;
+  box-shadow: 0px 18px 36px 0px rgb(233 233 233 / 20%);
 
 }
 #contact #form {
@@ -709,7 +727,7 @@ body {
   float: left;
   width: 255px;
   border: 0px;
-  color: #f1f1f1;
+  color: #f3f3f3;
   padding: 10px 10px 10px 30px;
   font: 11px/20px "Open Sans", Verdana, Helvetica, sans-serif;
   margin-bottom: 10px;
@@ -725,14 +743,17 @@ body {
   resize: none;
 }
 #contact #form input.name {
-  background: #7d7b7b
+  background:white
     url(http://img7.uploadhouse.com/fileuploads/17737/177370145f09fe433945815665aa214f80dbc6af.png)
     no-repeat 10px 8px;
+    font-size: 21px;
 }
 #contact #form input.email {
-  background: #7d7b7b
+  background:white
     url(http://img6.uploadhouse.com/fileuploads/17737/177370138cc63992182149e9befabff3eafa6d23.png)
     no-repeat 10px 9px;
+    font-size: 21px;
+
 }
 #contact #form input.captcha {
   background: #222222
@@ -747,13 +768,35 @@ body {
 #contact #form input.submit {
   cursor: pointer;
   width: 85px;
-  height: 30px;
+  height: 90px;
   float: right;
   padding: 0px 0px 5px 0px;
   margin: 10px 16px 0px 0px;
-  background: #7d7b7b;
-  color: #f1f1f1;
+  background-color: #13476a;
+  color: white;
   font: 14px/16px "Bree Serif", Georgia, serif;
+  font-size: 24px;
+  width: 40%;
+  font-weight: 700;
+   border: #fbfbfb solid 4px;
+   font-weight: 700
+
+
+/*
+  width: 60%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #13476a;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700; */
+
 }
 #contact #captcha span {
   width: 44px;
@@ -797,4 +840,23 @@ body {
 
 #densityComp {
   padding-left: 50px;
+}
+
+
+#facetCheckboxes .checkBoxes {
+  width: 160px;
+  height: 180px;
+  padding-right:10px ;
+
+}
+
+#facetForm {
+  padding: 10px;
+}
+
+
+#logocontainer {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
 }

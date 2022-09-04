@@ -156,6 +156,8 @@ export class PlotFacet extends React.Component {
       return (
         <div className="confine">
           <PlotFigure options={plotFuncFacet(data)} />
+
+          <div id="facetForm">
           <form onSubmit={this.changeMinYear}>
             <label htmlFor="minYear"> MinYear </label>
             <input
@@ -175,6 +177,9 @@ export class PlotFacet extends React.Component {
             />
             <button type="submit"> Update </button>
           </form>
+          </div>
+
+          <div id="facetCheckboxes">
           <fieldset className="checkBoxes">
             <label htmlFor="checkBox">
               {regionArr.map((region, index) => (
@@ -189,6 +194,11 @@ export class PlotFacet extends React.Component {
               ))}
             </label>
           </fieldset>
+          </div>
+
+
+
+
         </div>
       );
     } else {
