@@ -1,7 +1,7 @@
 ######  NPM_CEED DATA VISUALIZATION  ######
 
 # Heroku Url
-https://npm-run-ceed-capstone.herokuapp.com/
+https://npmceed-data-visualization.onrender.com/
 
 # About The Project
 
